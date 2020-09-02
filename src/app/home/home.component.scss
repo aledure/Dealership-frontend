@@ -1,0 +1,35 @@
+.container-main {
+    padding-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-text {
+    font-size: 4em;
+    color: black;
+}
+.fa-icon {
+    color: white;
+}
+.row {
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    height: 100%;
+}
+.vehicle-selection {
+    margin-top: 5em;
+}
+.link-icon {
+    font-size: 7em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white;
+}
+body {
+    background-color: #83CDAF;
+    height: 100vh;
+}

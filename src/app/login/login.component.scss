@@ -1,0 +1,34 @@
+body {
+    padding-top: 4em;
+    background-color: #83CDAF;
+    height: 100vh;
+    text-align: center;
+}
+.left-table {
+    border-right: solid;
+    height: 70vh;
+}
+.input-field {
+    background-color: #83CDAF;
+    border-color: black;
+    width: 70%;
+}
+.btn {
+    border-color: transparent;
+    color: black;
+    background-color: transparent;
+}
+.btn:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+.col-md {
+    text-align: center;
+}
+.form-group {
+    margin-left: 5em;
+}
+.form-row {
+    margin-left: 1em;
+}

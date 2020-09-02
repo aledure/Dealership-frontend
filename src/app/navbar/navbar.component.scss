@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #83CDAF;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white;
+}
+.btn {
+    border-color: transparent;
+    color: black;
+    padding: 5px;
+    margin-left: 15px;
+}
+.btn:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+.search-field {
+    background-color: #83CDAF;
+    border-color: black;
+}
+.search-field:hover {
+    background-color: white;
+}
+.search-field:focus {
+    background-color: white;
+}
