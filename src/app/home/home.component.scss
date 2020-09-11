@@ -2,11 +2,35 @@
     padding-top: 1em;
     justify-content: center;
     align-items: center;
+    padding-bottom: 17.75em;
+}
+.title-text {
+    padding-top: 1.2em;
+    color: #8499D3;
+    font-size: 7em;
+    letter-spacing: 0.3em;
 }
 .welcome-text {
     font-size: 4em;
     color: black;
 }
+.overlay {
+  background-color: rgba(2, 63, 233, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25em;
+}
+.jumbotron {
+    width: 100%;
+    height: 25em;
+    background-image: url('https://images.unsplash.com/photo-1585503418537-88331351ad99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80');
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: solid;
+  }
 .fa-icon {
     color: white;
 }
@@ -27,9 +51,8 @@ a {
     color: black;
 }
 a:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
 }
 body {
-    background-color: #83CDAF;
-    height: 100vh;
+    background-color: #F2F5F7;
 }
