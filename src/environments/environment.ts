@@ -3,9 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-  // URL WILL GO HERE
-  // apiUrl:
+  production: false,
+  apiUrl: 'https://codelabs-dealership-api.herokuapp.com'
 };
 
 /*

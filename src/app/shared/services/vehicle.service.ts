@@ -8,6 +8,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class VehicleService {
+  private vehicleApi: string;
+  constructor(
+    private http: HttpClient
+  ) {
+    this.vehicleApi = `${environment.apiUrl}api/v1/vehicles`;
+   }
 
-  constructor() { }
+   getAllVehicles() {
+     return this.http.get<any>(`${this.vehicleApi}/index`)
+   }
 }

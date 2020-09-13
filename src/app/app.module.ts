@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import {VehicleService} from 'src/app/shared/services/vehicle.service';
+import { VehicleService } from 'src/app/shared/services/vehicle.service';
+import { VehicleCardComponent } from './vehicle-card/vehicle-card.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {VehicleService} from 'src/app/shared/services/vehicle.service';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    VehicleCardComponent
   ],
   imports: [
     BrowserModule,

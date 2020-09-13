@@ -1,5 +1,4 @@
 export const environment = {
-  production: true
-  // API URL WILL GO HERE
-  // apiUrl:
+  production: true,
+  apiUrl: 'https://codelabs-dealership-api.herokuapp.com'
 };
