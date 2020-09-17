@@ -8,11 +8,20 @@ import { Vehicle } from 'src/app/shared/models/vehicle';
 })
 export class VehicleCardComponent implements OnInit, OnChanges {
   @Input() vehicle: Vehicle
+  vehicleImg: string
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngOnChanges() {}
+  ngOnChanges() {
+    if (this.vehicle) {
+      this.vehicleImg = this.vehicle.image
+    }
+  }
 
+setDefaultPic() {
+  this.vehicleImg = 'assets/car-placeholder.png'
+}
 }

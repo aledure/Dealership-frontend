@@ -1,0 +1,24 @@
+.card-title {
+  font-family: 'Bitter';
+  font-weight: bold;
+  font-size: 38px;
+  color: #8499D3;
+}
+.card {
+  background-color:  #FFFFFF;
+  height: 350px;
+  width: 300px;
+}
+.test {
+  padding-top: 3%;
+}
+.vehicle-img {
+  width: 250px;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

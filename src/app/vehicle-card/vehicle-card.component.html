@@ -1,14 +1,12 @@
-<div *ngIf="vehicle" class="card w-100">
+<div *ngIf="vehicle" class="card w-80 h-100">
   <div class="card-body">
-      <h1>hi</h1>
-      <div class="d-inline-flex w-100">
-          <div class="flex">
-              <h5 class="card-title">{{vehicle.year}} {{vehicle.make}} {{vehicle.model}}<span class="ml-2 card-year">{{vehicle.year}}</span></h5>
-              <h6 class="card-director">{{vehicle.condition}}, {{vehicle.color}}</h6>
-              <p class="card-description mt-4">{{vehicle.price}}</p>
-          </div>
-          <div class="flex ml-auto vehicle-img">
-              <img class="img img-fluid" [src]="vehicle.image" />
+      <div class="w-100">
+          <div class="flex test">
+              <h5 class="card-title">{{vehicle.year}} {{vehicle.make | uppercase}} {{vehicle.model | titlecase}}</h5>
+              <div class="flex ml-auto vehicle-img">
+                <img class="img img-fluid" [src]="vehicleImg" (error)="setDefaultPic()" />
+            </div>
+              <h6>Mileage: {{ vehicle.mileage }}<br>{{vehicle.condition}}, {{vehicle.color}}<br>${{vehicle.price}}</h6>
           </div>
       </div>
   </div>

@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { VehicleService } from '../shared/services/vehicle.service';
 import { Vehicle } from 'src/app/shared/models/vehicle';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-in-stock',
+  templateUrl: './in-stock.component.html',
+  styleUrls: ['./in-stock.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class InStockComponent implements OnInit {
   vehicles: Vehicle[] = []
   constructor(
     private vehicleService: VehicleService,

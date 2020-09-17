@@ -1,15 +1,25 @@
 body {
     padding-top: 4em;
-    background-color: #83CDAF;
+    background-color:   #F2F5F7;
     height: 100vh;
     text-align: center;
+}
+.sign-in-form {
+  background-color: rgba(0, 128, 128, 0.1);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 20px 20px 19px #0000000d;
+
 }
 .left-table {
     border-right: solid;
     height: 70vh;
+    margin-top: 1em;
+}
+.padding-box {
+  padding-top: 2.5em;
 }
 .input-field {
-    background-color: #83CDAF;
     border-color: black;
     width: 70%;
 }

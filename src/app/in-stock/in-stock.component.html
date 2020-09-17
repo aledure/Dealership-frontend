@@ -1,0 +1,17 @@
+<body>
+  <app-header></app-header>
+  <app-navbar></app-navbar>
+
+  <div class="sort-menu">
+    <h5>Sort</h5>
+  </div>
+
+  <div class="vehicles-div">
+    <div class="row card-row mb-3">
+    </div>
+    <div class="row">
+      <div *ngFor="let vehicle of vehicles" class="mt-5 col-lg-100">
+        <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
+      </div>
+    </div>
+  </div>

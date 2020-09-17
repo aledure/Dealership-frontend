@@ -1,36 +1,45 @@
 <body>
-<div class="jumbotron">
-  <div class="overlay">
-    <h1 class="title-text">Placeholder</h1>
-  </div>
-</div>
 
-<app-navbar></app-navbar>
+  <app-header></app-header>
+  <app-navbar></app-navbar>
 
-<div class="container card-container mb-3">
-  <div class="row card-row">
-      <div *ngFor="let vehicle of vehicles" class="col-12 mt-5">
-          <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
-      </div>
-  </div>
-</div>
+  <h1 class="header">New in Stock</h1>
 
-    <div class="container-main col-lg-12">
-        <div class="row">
-            <h1 class="welcome-text">Shop by Body Style</h1>
-        </div>
-        <div class="row vehicle-selection">
-            <div class="col-md-3">
-                <a href="#"><i class="fas fa-shuttle-van link-icon"></i></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#"><i class="fas fa-truck-pickup link-icon"></i></a>
-            </div>
-            <div class="col-md-3">
-                <a href="#"><i class="fas fa-car-side link-icon"></i></a>
-            </div>
-        </div>
+  <div class="vehicles-div">
+    <div class="row card-row mb-3">
     </div>
+    <div class="row">
+      <div *ngFor="let vehicle of vehicles; let i = index" class="mt-5 col-lg-100">
+        <div *ngIf="i < 3">
+          <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
+        </div>
+      </div>
+    </div>
+    <div class="view-all">
+      <a class="view-all-link" routerLink="/in-stock">View All ></a>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container-main col-lg-12 sort-box">
+    <div class="row">
+      <h1 class="header">Shop by Body Style</h1>
+    </div>
+    <div class="row vehicle-selection">
+      <div class="col-md-3">
+        <a href="#"><i class="fas fa-shuttle-van link-icon"></i></a>
+      </div>
+      <div class="col-md-3">
+        <a href="#"><i class="fas fa-truck-pickup link-icon"></i></a>
+      </div>
+      <div class="col-md-3">
+        <a href="#"><i class="fas fa-car-side link-icon"></i></a>
+      </div>
+    </div>
+  </div>
 
 </body>
 

@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VehicleService } from 'src/app/shared/services/vehicle.service';
 import { VehicleCardComponent } from './vehicle-card/vehicle-card.component';
+import { HeaderComponent } from './header/header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InStockComponent } from './in-stock/in-stock.component';
 
 
 @NgModule({
@@ -17,13 +20,17 @@ import { VehicleCardComponent } from './vehicle-card/vehicle-card.component';
     HomeComponent,
     NavbarComponent,
     LoginComponent,
-    VehicleCardComponent
-  ],
+    VehicleCardComponent,
+    HeaderComponent,
+    InStockComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     VehicleService
