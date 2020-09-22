@@ -1,23 +1,69 @@
 .vehicles-div {
   background-color: rgba(0, 128, 128, 0.1);
-  margin-left: 8em;
-  margin-right: 8em;
-  padding-left: 5em;
+  margin-right: 10em;
+  margin-left: 10em;
+  padding-left: 4em;
   box-shadow: 20px 20px 19px #0000000d;
   border-style: solid;
   border-radius: 6px;
   border-color: transparent;
   border-width: 1px;
 }
+.card {
+  margin-right: 1em;
+  margin-left: 1em;
+}
 .view-all-link {
   line-height: 5em;
   padding-left: 70%;
+}
+.about {
+  box-shadow: 20px 20px 19px #0000000d;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: transparent;
+  border-width: 1px;
+  background-color: white;
+  margin-right: 8em;
+  margin-left: 8em;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 1.5em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  // background-image: url('https://images.unsplash.com/photo-1585503418537-88331351ad99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 100% auto;
+}
+// .overlay {
+//   background-color: rgba(255, 255, 255, 0.2);
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 25em;
+//   padding-left: 1em;
+//   padding-top: 1.5em;
+//   padding-right: 2em;
+//   padding-bottom: 1em;
+// }
+.indent {
+  padding-left: 2em;
+}
+.contact {
+  margin-left: 47%;
 }
 .header {
     font-size: 4em;
     color: black;
     padding-top: 0.5em;
     padding-bottom: 0.25em;
+}
+.subheader {
+  font-size: 4em;
+  color: black;
+  padding-top: 1em;
+  padding-bottom: 0.25em;
 }
 .fa-icon {
     color: white;
@@ -53,3 +99,6 @@ body {
     height: 100%;
     margin: 0;
   }
+p {
+  line-height: 1.5em;
+}

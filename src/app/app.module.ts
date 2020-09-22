@@ -12,6 +12,8 @@ import { VehicleCardComponent } from './vehicle-card/vehicle-card.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InStockComponent } from './in-stock/in-stock.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { InStockComponent } from './in-stock/in-stock.component';
     LoginComponent,
     VehicleCardComponent,
     HeaderComponent,
-    InStockComponent
+    InStockComponent,
+    ContactComponent
     ],
   imports: [
     BrowserModule,
