@@ -10,8 +10,14 @@
     <div class="row card-row mb-3">
     </div>
     <div class="row">
-      <div *ngFor="let vehicle of vehicles" class="mt-5 col-lg-100">
+      <div *ngFor="let vehicle of vehicles" class="mt-5 col-lg-100 car-div">
         <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
       </div>
     </div>
+    <div class="paginator">
+      <mat-paginator [length]="50" [pageSize]="10" [pageSizeOptions]="[5, 10, 20, 50]">
+      </mat-paginator>
+    </div>
   </div>
+
+</body>
