@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://codelabs-dealership-api.herokuapp.com/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

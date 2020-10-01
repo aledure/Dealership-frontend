@@ -15,7 +15,7 @@ export class VehicleService {
   constructor(
     private http: HttpClient
   ) {
-    this.vehicleApi = `${environment.apiUrl}api/v1/vehicles`;
+    this.vehicleApi = `${environment.apiUrl}api/v1/vehicles/index/?page=1`;
    }
 
    getAllVehicles(): Observable<Vehicle[]> {

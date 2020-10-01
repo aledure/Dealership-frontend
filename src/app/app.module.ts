@@ -14,7 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InStockComponent } from './in-stock/in-stock.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSliderModule } from '@angular/material/slider';
+
+
 
 
 
@@ -38,7 +41,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSliderModule
   ],
   providers: [
     VehicleService
