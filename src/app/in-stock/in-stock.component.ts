@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { VehicleService } from '../shared/services/vehicle.service';
 import { Vehicle } from 'src/app/shared/models/vehicle';
 
+
 @Component({
   selector: 'app-in-stock',
   templateUrl: './in-stock.component.html',

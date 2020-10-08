@@ -15,10 +15,10 @@ export class VehicleService {
   constructor(
     private http: HttpClient
   ) {
-    this.vehicleApi = `${environment.apiUrl}api/v1/vehicles/index/?page=1`;
+    this.vehicleApi = `${environment.apiUrl}api/v1/vehicles/`;
    }
 
    getAllVehicles(): Observable<Vehicle[]> {
-     return this.http.get<Vehicle[]>(`${this.vehicleApi}/index`)
+     return this.http.get<Vehicle[]>(`${this.vehicleApi}/index/?page=1`)
    }
 }
