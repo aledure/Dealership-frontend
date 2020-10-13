@@ -1,33 +1,32 @@
 <body>
 
 
-
   <app-header></app-header>
   <app-navbar></app-navbar>
-
   <h1 class="header">About Us</h1>
-
   <div class="about">
     <div class="overlay">
       <p class="indent">
         Shopping for your next vehicle shouldn't be a hassle.<br>
       <p class="indent">
-        You don't need to drive for hours or make deals over the phone to get a good deal on a great used vehicle. Located
-        right here in Jackson, MO, <b>L&M MOTORS</b> is dedicated to bringing our community a great selection of
+        You don't need to drive for hours or make deals over the phone to get a good deal on a great used vehicle.
+        Located
+        right here in Jackson, MO, ab Motors is dedicated to bringing our community a great selection of
         high-quality, well-maintained, like-new vehicles. We invite you to stop by and look over our inventory of cars,
         pickups, vans, and SUVs.<br>
       </p>
       <p class="indent">
-        <b>L&M MOTORS</b> is dedicated to working with you - not working you over.<br>
+        ab Motors is dedicated to working with you - not working you over.<br>
       </p>
       <p class="indent">
-        At <b>L&M MOTORS</b>, we are proud to offer a relaxed shopping experience with a friendly sales team and we'll
+        At ab Motors, we are proud to offer a relaxed shopping experience with a friendly sales team and we'll
         never try to pressure you into a vehicle or auto loan that you're not sure about. We're happy to answer your
-        questions. From features, options, and warranties, to pricing, costs, and financing, our knowledgeable sales staff
+        questions. From features, options, and warranties, to pricing, costs, and financing, our knowledgeable sales
+        staff
         has the answers, or will find the answer for you.<br>
       </p>
       <p class="indent">
-        Stop by <b>L&M MOTORS</b> in Jackson, MO today and let us show you the local difference in the car shopping
+        Stop by ab Motors in Jackson, MO today and let us show you the local difference in the car shopping
         experience.<br>
       </p><br>
       <a class="contact" routerLink="/contact"><b>Contact Us</b></a>
@@ -40,7 +39,7 @@
   <div class="vehicles-div">
     <div class="row card-row mb-3">
     </div>
-    <div class="row">
+    <div class="row main-row">
       <div *ngFor="let vehicle of vehicles; let i = index" class="mt-5 col-lg-100 card">
         <div *ngIf="i < 3">
           <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
@@ -51,28 +50,7 @@
       <a class="view-all-link" routerLink="/in-stock"><b>View All ></b></a>
     </div>
   </div>
+<div class="spacer"></div>
 
-
-
-
-
-
-  <!-- <div class="container-main col-lg-12 sort-box">
-    <div class="row">
-      <h1 class="subheader">Shop by Body Style</h1>
-    </div>
-    <div class="row vehicle-selection">
-      <div class="col-md-3">
-        <a href="#"><i class="fas fa-shuttle-van link-icon"></i></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#"><i class="fas fa-truck-pickup link-icon"></i></a>
-      </div>
-      <div class="col-md-3">
-        <a href="#"><i class="fas fa-car-side link-icon"></i></a>
-      </div>
-    </div>
-  </div> -->
-
-
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+</body>

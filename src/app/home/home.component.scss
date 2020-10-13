@@ -1,8 +1,9 @@
 .vehicles-div {
-  background-color: rgba(197, 112, 63, 0.1);
+  background-color: #e8f0f3;
   margin-right: 10em;
-  margin-left: 10em;
-  padding-left: 4em;
+  margin-left: 15em;
+  padding-left: 6.5em;
+  width: 70%;
   box-shadow: 20px 20px 19px #0000000d;
   border-style: solid;
   border-radius: 6px;
@@ -14,7 +15,7 @@
   margin-left: 1em;
 }
 .view-all-link {
-  line-height: 5em;
+  line-height: 3em;
   padding-left: 70%;
 }
 .about {
@@ -23,7 +24,7 @@
   border-radius: 6px;
   border-color: transparent;
   border-width: 1px;
-  background-color: white;
+  background-color: #e8f0f3;
   margin-right: 8em;
   margin-left: 8em;
   text-align: left;
@@ -31,15 +32,7 @@
   padding-top: 1.5em;
   padding-right: 2em;
   padding-bottom: 1em;
-  background-color: rgba(197, 112, 63, 0.1);
 }
-// .overlay {
-//   background-color: rgba(251, 239, 0, 0.2);
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 25em;
-// }
 .indent {
   padding-left: 2em;
 }
@@ -47,52 +40,85 @@
   margin-left: 47%;
 }
 .header {
-    font-size: 4em;
-    color: #CF5A20;
-    padding-top: 0.5em;
-    padding-bottom: 0.25em;
+  font-size: 4em;
+  color: #142f3c;
+  padding-top: 0.8em;
+  padding-bottom: 0.25em;
+  font-family: "Poppins";
 }
 .subheader {
   font-size: 4em;
-  color: #CF5A20;
-  padding-top: 1em;
+  color: #142f3c;
+  padding-top: 0.8em;
   padding-bottom: 0.25em;
+  font-family: "Poppins";
 }
 .fa-icon {
-    color: white;
+  color: white;
 }
 .row {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.vehicle-selection {
-    margin-top: 5em;
-    padding-bottom: 5em;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .link-icon {
-    font-size: 7em;
-    color: black;
+  font-size: 7em;
+  color: black;
 }
 .link-icon:hover {
-  color: #8499D3;
+  color: #8499d3;
 }
 a {
-    text-decoration: none;
-    color: #DE9E00;
+  text-decoration: none;
+  color: #34545c;
 }
 a:hover {
-    color: rgba(207, 90, 32, 0.7);
+  color: #fff;
 }
 .sort-box {
   padding-top: 5em;
 }
 body {
-    background-color: #DDDAD9;
-    width: 100%;
-    height: 240vh;
-    margin: 0;
-  }
+  background-image: linear-gradient(to bottom, #4c6874, #f3f3f7);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 p {
   line-height: 1.5em;
+}
+.blue-text {
+  color: #34545c;
+}
+.spacer {
+  height: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .about {
+    width: 90%;
+    margin-left: 1.5em;
+    font-size: 0.75em;
+  }
+  .vehicles-div {
+    width: 90%;
+    margin-left: 1.5em;
+    font-size: 0.75em;
+    padding-bottom: -20px;
+  }
+  body {
+    margin: 0 auto;
+    height: 100%;
+  }
+  .header {
+    font-size: 3em;
+  }
+  .subheader {
+    font-size: 3em;
+    padding-top: 1.5em;
+  }
 }

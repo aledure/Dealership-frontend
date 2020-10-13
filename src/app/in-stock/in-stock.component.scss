@@ -1,37 +1,50 @@
 body {
-  background-color: #F2F5F7;
+  background-image: linear-gradient(to bottom, #4c6874, #F3F3F7);
   width: 100%;
   height: 100%;
   margin: 0;
 }
 .vehicles-div {
-  background-color: rgba(197, 112, 63, 0.1);
+  background-color: #4c6874;
   margin-left: 5em;
   margin-right: 5em;
-  padding-left: 4em;
+  padding-left: 7em;
+  padding-bottom: 2em;
   box-shadow: 20px 20px 19px #0000000d;
   border-style: solid;
   border-radius: 6px;
   border-color: transparent;
   border-width: 1px;
 }
-.card {
-  height: 350px;
-  width: 300px;
-}
 .car-div {
   margin-right: 0.5em;
   margin-left: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .sort-menu {
-  background: transparent;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 4em;
+  padding-top: 1em;
 }
-.paginator {
-  width: 75vw;
-  margin-left: 3em;
-  padding-top: 2em;
-  margin-bottom: 2em;
+.spacer {
+  height: 2em;
 }
+
+@media only screen and (max-width: 600px) {
+  .vehicles-div {
+    margin-left: 1.5em;
+    font-size: 0.75em;
+    padding-bottom: -20px;
+    padding-left: 7em;
+    margin-right: 2em;
+  }
+  .car-div {
+    width: 100%;
+    font-size: 0.75em;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+    padding-right: 0.5em;
+  }
+  .sort-menu {
+    padding-top: 0.5em;
+  }
+  }

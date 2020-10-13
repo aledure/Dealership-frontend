@@ -1,38 +1,50 @@
 .navbar {
-    background-color: #DDDAD9;
-    box-shadow: 20px 20px 19px #0000000d;
-    padding-bottom: 10px;
-    padding-top: 0.5em;
+  background-color: #01141c;
+  box-shadow: 20px 20px 19px #0000000d;
+  padding-bottom: 10px;
+  padding-top: 0.5em;
+  font-family: 'Poppins';
 }
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: #fff;
 }
 .orange {
-  color: #CF5A20;
+  color: #4c6874;
 }
 a:hover {
-    color: #DE9E00;
+  color: #fff;
 }
 .btn {
-    border-color: transparent;
-    color: black;
-    padding: 5px;
-    margin-left: 15px;
+  border-color: #4c6874;
+  color: #4c6874;
+  padding: 5px;
+  margin-left: 15px;
 }
 .btn:hover {
-    color: black;
-    border-color: white;
-    background-color: #CF5A20;
+  color: #fff;
+  border-color: #fff;
+  background-color: #4c6874;
 }
 .search-field {
-    background-color: ffffff;
-    border-color: black;
+  background-color: #ffffff;
+  border-color: black;
 }
 .search-field:hover {
-    background-color: white;
+  background-color: white;
 }
 .search-field:focus {
-    background-color: #ffffff;
-    color: #ffffff;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.small-text {
+  font-size: 0.5;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .navbar {
+    margin-top: -0.25em;
+  }
 }
