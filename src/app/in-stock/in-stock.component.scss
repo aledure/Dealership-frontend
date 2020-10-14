@@ -8,8 +8,8 @@ body {
   background-color: #4c6874;
   margin-left: 5em;
   margin-right: 5em;
-  padding-left: 7em;
-  padding-bottom: 2em;
+  padding-left: 6.5em;
+  padding-bottom: 3em;
   box-shadow: 20px 20px 19px #0000000d;
   border-style: solid;
   border-radius: 6px;
@@ -18,15 +18,14 @@ body {
 }
 .car-div {
   margin-right: 0.5em;
-  margin-left: 0.5em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .sort-menu {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 .spacer {
-  height: 2em;
+  height: 2.5em;
 }
 
 @media only screen and (max-width: 600px) {

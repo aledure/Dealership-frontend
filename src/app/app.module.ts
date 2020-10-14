@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSliderModule } from '@angular/material/slider';
+import { VehicleDetailComponent } from './in-stock/vehicle-detail/vehicle-detail.component';
 
 
 
@@ -31,7 +32,8 @@ import { MatSliderModule } from '@angular/material/slider';
     VehicleCardComponent,
     HeaderComponent,
     InStockComponent,
-    ContactComponent
+    ContactComponent,
+    VehicleDetailComponent
     ],
   imports: [
     BrowserModule,

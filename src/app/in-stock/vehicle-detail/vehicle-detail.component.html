@@ -1,0 +1,32 @@
+<body>
+
+  <div class="container mb-3">
+    <div class="row mt-5">
+      <div class="col-12 mt-5 mb-5">
+        <div *ngIf="vehicle" class="card p-4">
+          <div class="d-inline-flex w-100">
+            <div class="flex">
+              <h5 class="vehicle-title">{{vehicle.make}}</h5>
+              <h6 class="vehicle-description mt-4">{{vehicle.model}}</h6>
+            </div>
+            <div class="ml-auto flex vehicle-img">
+              <img class="img img-fluid" [src]="vehicleImg" (error)="setDefaultPic()">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-4 mb-4">
+              <p class="desc-text">Year</p>
+              <hr>
+              <p class="vehicle-text">{{vehicle.year}}</p>
+            </div>
+            <div class="col-12 mt-4 mb-4">
+              <p class="desc-text">Mileage</p>
+              <hr>
+              <p class="vehicle-text">{{vehicle.mileage}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

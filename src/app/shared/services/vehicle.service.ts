@@ -21,4 +21,8 @@ export class VehicleService {
    getAllVehicles(): Observable<Vehicle[]> {
      return this.http.get<Vehicle[]>(`${this.vehicleApi}/index/?page=1`)
    }
+
+   getVehicleById(params) {
+     return this.http.get<any>(`${this.vehicleApi}/show?id=${params.id}`)
+   }
 }

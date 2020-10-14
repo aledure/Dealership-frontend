@@ -1,4 +1,4 @@
-<div *ngIf="vehicle" class="card w-80 h-100">
+<div *ngIf="vehicle" class="card w-80 h-100" (click)="routeToViewVehicle(vehicle.id)">
   <div class="card-body">
       <div class="w-100">
           <div class="flex test">
