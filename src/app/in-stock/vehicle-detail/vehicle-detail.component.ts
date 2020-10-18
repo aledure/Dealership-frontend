@@ -29,7 +29,20 @@ export class VehicleDetailComponent implements OnInit, OnDestroy {
 
   retrieveVehicleById(id: number) {
     const params = { id: id }
-    }
+    this.subs.add(
+      this.vehicleService.getVehicleById(params).subscribe(data => {
+        if (data && data.vehicle) {
+          console.log(data)
+          this.vehicle = new Vehicle(data.vehicle)
+          this.vehicleImg = this.vehicle.image
+        }
+      }, error => {
+        if (error) {
+          console.log(error)
+        }
+      })
+    )
+  }
 
   ngOnDestroy() {
     this.subs.unsubscribe()
