@@ -1,5 +1,5 @@
 const express = require('express');
-var sorceSsl = require('force-ssl-heroku');
+var forceSsl = require('force-ssl-heroku');
 const path = require('path');
 const enableProdMode = require('@angular/core').enableProdMode
 
