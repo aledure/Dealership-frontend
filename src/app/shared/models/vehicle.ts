@@ -11,7 +11,7 @@ export class Vehicle {
     price: number
     created_at: string
     updated_at: string
-    contructor({
+    constructor({
         bodytype = '',
         year = null,
         make = '',
